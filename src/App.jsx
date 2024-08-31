@@ -18,8 +18,7 @@ function App() {
       console.log(err)
     })
   },[change])
-  //scale the picture, delete default margin
-  //app name random image
+  
   return (
     <>
     <div className="Page-header"><h1>Random Image App</h1></div>
