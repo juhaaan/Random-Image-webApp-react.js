@@ -26,8 +26,9 @@
   margin-bottom: 25px;
 }
 .MainContainer {
+  margin:0px 20px;
   margin-top: 30px;
-  margin-left:10px;
+
 }
 .MainContainer button:active{
   transform: scale(0.9);
