@@ -16,21 +16,27 @@
 .MainContainer button{
   display: block;
   margin: 0px auto;
-  height: 30px;
-  width: 100px;
+  height: 50px;
+  font-size: 15px;
+  width: 150px;
   border: 0px;
   background-color: aliceblue;
   color: #242424;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .MainContainer {
   margin-top: 30px;
-  margin-left:10px
+  margin-left:10px;
 }
 .MainContainer button:active{
   transform: scale(0.9);
 }
+
+.MainContainer button:hover{
+  box-shadow: 0px 0px 7px white;
+}
+
 
 * {
   margin: 0;

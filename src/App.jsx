@@ -25,7 +25,7 @@ function App() {
     <div className="Page-header"><h1>Random Image App</h1></div>
     <Image data={apiData}></Image>
     <footer className='MainContainer' >
-      <button onClick={()=> setChange(!change)}>New Image</button>
+      <button onClick={()=> setChange(!change)}>Get new image</button>
       <Description data={apiData}></Description>
       {apiData?.location.name && <Location data={apiData}></Location>}
     </footer>
