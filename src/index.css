@@ -1,11 +1,12 @@
 :root {
+  margin:0;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #509ce2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,19 +14,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .MainContainer button{
-  cursor: pointer;
-  display: inline;
-  margin-left: 200px;
+  display: block;
+  margin: 0px auto;
   height: 30px;
   width: 100px;
   border: 0px;
   background-color: aliceblue;
   color: #242424;
   border-radius: 8px;
+  margin-bottom: 40px;
 }
 .MainContainer {
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-left:10px
 }
 .MainContainer button:active{
   transform: scale(0.9);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.Page-header h1 {
+  font-size: 40px;
+  text-align: center;
+}
+

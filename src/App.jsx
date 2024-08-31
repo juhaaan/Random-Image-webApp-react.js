@@ -6,6 +6,7 @@ import Location from './components/Location/Location'
 
 function App() {
   const [apiData,setApiData] = useState(null)
+  const [change, setChange] = useState(false)
 
    useEffect(()=>{
     const UNSPLASH_KEY = import.meta.env.VITE_UNSPLASH_API_KEY
@@ -16,17 +17,18 @@ function App() {
     }).catch(err=>{
       console.log(err)
     })
-  },[])
-  //scale the picture, delete default margin 
-  
+  },[change])
+  //scale the picture, delete default margin
+  //app name random image
   return (
     <>
-    <div className='MainContainer' >
-      <Description data={apiData}></Description>
-      <button>New Image</button>
-      {apiData?.location.name && <Location data={apiData}></Location>}
-    </div>
+    <div className="Page-header"><h1>Random Image App</h1></div>
     <Image data={apiData}></Image>
+    <footer className='MainContainer' >
+      <button onClick={()=> setChange(!change)}>New Image</button>
+      <Description data={apiData}></Description>
+      {apiData?.location.name && <Location data={apiData}></Location>}
+    </footer>
     </>
   )
 }
