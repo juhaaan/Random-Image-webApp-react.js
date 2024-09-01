@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Image from './components/Image/Image'
-import Description from './components/Description/Description'
-import Location from './components/Location/Location'
 
 function App() {
   const [apiData,setApiData] = useState(null)
@@ -25,8 +23,8 @@ function App() {
     <Image data={apiData}></Image>
     <footer className='MainContainer' >
       <button onClick={()=> setChange(!change)}>Get new image</button>
-      <Description data={apiData}></Description>
-      {apiData?.location.name && <Location data={apiData}></Location>}
+      <h1>{apiData?.alt_description}</h1>
+      {apiData?.location.name && <div><h3>{apiData?.location.name}</h3></div>}
     </footer>
     </>
   )

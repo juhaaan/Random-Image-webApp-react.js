@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #77b4ec;
+  background-color: #76b7f4;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,7 +28,7 @@
 .MainContainer {
   margin:0px 20px;
   margin-top: 30px;
-
+  height: 20vh;
 }
 .MainContainer button:active{
   transform: scale(0.9);
@@ -46,5 +46,10 @@
 .Page-header h1 {
   font-size: 40px;
   text-align: center;
+  
 }
+.Page-header {
+  max-height: 15vh;
+}
+
 
