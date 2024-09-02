@@ -1,1 +1,1 @@
-# Random Photo webApp 
+# Random Image webApp 
